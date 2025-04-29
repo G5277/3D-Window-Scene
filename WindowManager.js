@@ -48,14 +48,12 @@ class WindowManager
 		}
 		else
 		{
-			let c = false;
-
 			for (let i = 0; i < pWins.length; i++)
 			{
-				if (pWins[i].id != nWins[i].id) c = true;
+				if (pWins[i].id != nWins[i].id) return true;
 			}
 
-			return c;
+			return false;
 		}
 	}
 
